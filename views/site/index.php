@@ -6,7 +6,7 @@ $this->title = 'Интерент магазин EVA';
 ?>
 <!--content -->
 <section id="slider"><!--slider-->
-	<div class="container">
+	
 		<div class="row">
 			<div class="col-sm-12">
 				<div id="slider-carousel" class="carousel slide" data-ride="carousel">
@@ -31,7 +31,7 @@ $this->title = 'Интерент магазин EVA';
 								<button type="button" class="btn btn-default get">Перейти в каталог</button>
 							</div>
 							<div class="col-sm-6">
-								<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
+								<img src="../web/images/home/girl1.jpg" class="girl img-responsive" alt="" />
 
 							</div>
 						</div>
@@ -43,7 +43,7 @@ $this->title = 'Интерент магазин EVA';
 								<button type="button" class="btn btn-default get">Перейти в каталог</button>
 							</div>
 							<div class="col-sm-6">
-								<img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
+								<img src="../web/images/home/girl2.jpg" class="girl img-responsive" alt="" />
 
 							</div>
 						</div>
@@ -57,7 +57,7 @@ $this->title = 'Интерент магазин EVA';
 								<button type="button" class="btn btn-default get">Перейти в каталог</button>
 							</div>
 							<div class="col-sm-6">
-								<img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
+								<img src="../web/images/home/girl3.jpg" class="girl img-responsive" alt="" />
 
 							</div>
 						</div>
@@ -72,7 +72,7 @@ $this->title = 'Интерент магазин EVA';
 					</a>
 				</div>
 
-			</div>
+			
 		</div>
 	</div>
 </section><!--/slider-->

@@ -1,4 +1,4 @@
-<div class="col-sm-9 padding-right">
+<div class="col-sm-12 padding-right">
 					<div class="features_items"><!--features_items-->
 						
 						<div class="col-sm-4">

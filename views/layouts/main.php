@@ -36,6 +36,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 	<?php $this->beginBody() ?>
 
 	<header id="header"><!--header-->
+
 		<div class="header-top"> <!--header_top-->
 			<div class="container">
 				<div class="row">
@@ -78,13 +79,15 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 					<div class="col-sm-8">
 						<div class="shop-menu pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="<?=\yii\helpers\Url::to(['/site/login']) ?>"><i class="fa fa-user"></i>
+								<li><a href="<?=\yii\helpers\Url::to(['/site/login']) ?>">
+										<i class="fa fa-user"> </i>
 										Учетная запись</a></li>
 								<li><a href="<?=\yii\helpers\Url::to(['/site/wishlist']) ?>"><i class="fa fa-star"></i>
 										Список желаний</a></li>
 								<li><a href="<?=\yii\helpers\Url::to(['/site/checkout']) ?>"><i
-											class="fa fa-crosshairs"></i> Оформить покупку</a></li>
-								<li><a href="<?=\yii\helpers\Url::to(['/site/cart']) ?>"><i class="fa fa-shopping-cart"></i> Корзина</a></li>
+											class="fa fa-crosshairs"></i> Заказы</a></li>
+								<li><a href="<?=\yii\helpers\Url::to(['/site/cart']) ?>"><i
+											class="fa fa-shopping-cart"></i> Корзина</a></li>
 								<li><a href="<?=\yii\helpers\Url::to(['/site/login']) ?>"><i class="fa fa-lock"></i>
 										Войти</a></li>
 							</ul>
@@ -100,36 +103,36 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 				</div>
 			</div>
 		</div><!--/header-middle-->
-
+        
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
 
+					<div class="mainmenu  pull-left">
+						<?php
 
-					<?php
-										
-					echo Nav::widget([
-						'options' => ['class' => 'navbar-nav success'],
-						'items' => [
-							['label' => 'Главная', 'url' => ['/site/index']],
-							['label' => 'Каталог ', 'url' => ['/site/catalog']],
-							['label' => 'Распродажа', 'url' => ['/site/sale']],
-							['label' => 'Доставка и оплата', 'url' => ['/site/delivery']],
-							['label' => 'Новости', 'url' => ['/site/blog']],
-							['label' => 'Контакты', 'url' => ['/site/contact']],
+						echo Nav::widget([
+							'options' => ['class' => 'navbar-nav success '],
+							'items' => [
+								['label' => 'Главная', 'url' => ['/site/index']],
+								['label' => 'Каталог ', 'url' => ['/site/catalog']],
+								['label' => 'Распродажа', 'url' => ['/site/sale']],
+								['label' => 'Доставка и оплата', 'url' => ['/site/delivery']],
+								['label' => 'Новости', 'url' => ['/site/blog']],
+								['label' => 'Контакты', 'url' => ['/site/contact']],
 
-						]
-					]);
-					
-					?>
+							]
+						]);
 
+						?>
+					</div>
 
 				</div>
 			</div>
 		</div><!--/header-bottom-->
 
 	</header><!--/header-->
-
+<div class="mainmenu-br"></div>
 
 	<main id="main" class="flex-shrink-0" role="main">
 		<div class="container">
@@ -141,7 +144,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 		</div>
 	</main>
 
-	
+
 
 
 	<footer id="footer"><!--Footer-->
@@ -154,7 +157,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 							<p>Интернет магазин спортивной одежды</p>
 						</div>
 					</div>
-					
+
 					<div class="col-sm-7"></div>
 					<div class="col-sm-3">
 						<div class="address">
